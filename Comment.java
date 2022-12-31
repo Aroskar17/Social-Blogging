@@ -64,8 +64,6 @@ public class Comment extends Frame implements ActionListener{
                 cntBlogs=rs.getInt("COUNT(blogId)");
 System.out.println("Users="+users+"\nBlogs="+cntBlogs);
 displayPanel();
-//rs.close();                  
-//stmt.close();    
   
 
     
@@ -135,25 +133,8 @@ if (rs != null) {
             {
                 System.out.println(e);
             }
-//            for(int i=0;i<cntComments;i++)
-//            {
-//                JPanel pann=new JPanel();
-//                JLabel lb= new JLabel();
-//                
-//            }
-//            
-//            try{
-//                
-//                stmt=conn.createStatement();
-//                rs=stmt.executeQuery("SELECT * FROM comment WHERE blogId="+deleteCommentBlogId);
-//                
-//            }
-//            catch(SQLException e)
-//            {
-//                System.out.println(e);
-//            }
-//            
-//           //
+
+          
             f.setVisible(true);    
 
     }
